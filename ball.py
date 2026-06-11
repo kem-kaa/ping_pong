@@ -27,5 +27,9 @@ def update_ball():
 
 
 
+def bounce_x():
+    global ball_dx
+    ball_dx = -ball_dx
+
 def draw_ball(screen):
     pygame.draw.ellipse(screen, BALL_COLOR, ball_rect)
